@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Willify - Register</title>
 
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/register.css"> 
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/register.css"> 
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
 </head>
@@ -23,7 +23,7 @@
     </header>
     <main>
         <h1 class="register_title">Register</h1>
-        <form method="post" action="/backend/register.php"> 
+        <form method="POST" action="../backend/register.php"> 
             <label for="name">Name:</label>
             <input type="text" id="name" name="name"><br><br>
 
@@ -51,14 +51,14 @@
                 <option value="UK">United Kingdom</option>
             </select><br><br>
 
-            <button type="submit">Register</button>
+            <input type="submit" name="submit">Register</input>
         </form>
     </main>
     <footer>
         <p>&copy; 2024 Willify. All rights reserved.</p>
     </footer>
   
-    <script src="/scripts/register.js"></script> >
+    <script src="../scripts/register.js"></script> >
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
