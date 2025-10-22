@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 1,
             title: "I'm Missing You - Sunjae (선재)",
-            image: "/images/songs2.jpg",
+            image: "../images/songs2.jpg",
             description: "I'm Missing You oleh Sunjae adalah lagu yang ditampilkan oleh Sunjae (선재), yang menggambarkan kerinduan yang mendalam dan emosional seseorang terhadap seseorang yang mereka cintai, dengan lirik yang penuh makna dan melodi yang memikat. Lagu ini dirilis pada tanggal 15 Februari 2020....",
             lyrics: [
                 "아직 모르고 있죠 그댄",
@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 "그댈 오늘도 기다려요",
                 "그댈 오늘도 기다려요"
             ],
-            audio: "/audios/sun jae snzae i'm missing you ost true beauty part 4.mp3"
+            audio: "../audios/sun jae snzae i'm missing you ost true beauty part 4.mp3"
         },
         {
             id: 2,
             title: "Fall In You - Ha SungWoon",
-            image: "/images/songs1.jpg",
+            image: "../images/songs1.jpg",
             description: "Fall In You oleh Ha SungWoon adalah lagu pop yang menyentuh tentang jatuh cinta dengan lirik yang menggambarkan perasaan yang intens dan melodi yang mengalun mengalir. Dirilis pada tanggal 5 Maret 2021, lagu ini dibawakan oleh Ha SungWoon, dan berhasil menciptakan momen emosional bagi pendengarnya....",
             lyrics: [
                 "용기가 나지 않아서 그래",
@@ -88,12 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 "내 모든 걸 주고픈 한사람",
                 "그대"
             ],
-            audio: "/audios/HA SUNG WOON - Fall in You (OST True Beauty Part.6).mp3"
+            audio: "../audios/HA SUNG WOON - Fall in You (OST True Beauty Part.6).mp3"
         },
         {
             id: 3,
             title: "Sacrifice - Han Seung-Woo (한승우)",
-            image: "/images/fame.jpg",
+            image: "../images/fame.jpg",
             description: "Sacrifice oleh Han Seung-Woo (한승우) adalah lagu solo yang dibawakan oleh Han Seung-Woo (한승우), mantan anggota grup K-pop Victon, yang menampilkan vokal yang mendalam dan lirik yang menyentuh, dirilis pada tanggal 10 Agustus 2020....",
             lyrics: [
                 "Yeah ooh uh",
@@ -151,12 +151,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 "널 더 원해 is the point of sacrifice",
                 "I just gotta sacrifice"
             ],
-            audio: "/audios/Han Seung Woo - Sacrifice [129 kbps] (1).mp3"
+            audio: "../audios/Han Seung Woo - Sacrifice [129 kbps] (1).mp3"
         },
         {
             id: 4,
             title: "UN Village - Baekhyun (백현)",
-            image: "/images/citylight.jpg",
+            image: "../images/citylight.jpg",
             description: "UN Village oleh Baekhyun (백현) adalah lagu solo yang dirilis oleh Baekhyun, anggota dari grup idola Korea Selatan EXO, pada tanggal 10 Juli 2019. Lagu ini merupakan bagian dari album mini solo pertamanya yang berjudul City Lights. Dengan lirik yang memikat dan melodi yang adiktif, UN Village menampilkan vokal yang mendalam dan kualitas produksi yang tinggi, membawa pendengar dalam perjalanan melalui suasana malam yang misterius di kawasan UN Village di Seoul.",
             lyrics: [
                 "Navigation 독서당어린이공원으로",
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             id: 5,
             title: "HEAVEN - AB6IX (에이비식스)",
-            image: "/images/newhope.jpg",
+            image: "../images/newhope.jpg",
             description: "HEAVEN oleh AB6IX (에이비식스) adalah lagu K-pop yang dirilis pada 21 November 2022, menggabungkan beat elektronik yang energik, vokal kuat, rap dinamis, koreografi menarik, dan video musik estetis untuk menciptakan suasana kebahagiaan dan keindahan seolah-olah berada di surga...",
             lyrics: [
                 "Oh, oh, oh, oh, oh, oh",
@@ -275,7 +275,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Oh, oh, oh, oh, oh, oh",
                 "우리 함께 있다면 여긴 heaven"
             ], 
-            audio: "/audios/AB6IX - HEAVEN [320 kbps].mp3"
+            audio: "../audios/AB6IX - HEAVEN [320 kbps].mp3"
         },
         {
             id: 6,
@@ -331,12 +331,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 "The day I really thought you are",
                 "The only one that I could ever really love"
             ], 
-            audio: "/audios/Jamie Miller - Wishes (Snowdrop OST Part.4) [320 kbps].mp3"
+            audio: "../audios/Jamie Miller - Wishes (Snowdrop OST Part.4) [320 kbps].mp3"
         },
         {
             id: 7,
             title: "SURREAL(Alternative Rock Mix) - AB6IX (에이비식스)",
-            image: "/images/newhope.jpg",
+            image: "../images/newhope.jpg",
             description: "SURREAL(Alternative Rock Mix) oleh AB6IX (에이비식스) adalah lagu karya AB6IX (에이비식스) yang menggabungkan elemen-elemen rock alternatif dengan gaya musik pop mereka yang khas, menciptakan atmosfer yang unik dan misterius. Lagu ini dirilis pada tanggal 5 Mei 2024....",
             lyrics: [
                 "Oh",
@@ -405,12 +405,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Surreal",
                 "Surreal"
             ], 
-            audio: "/audios/AB6IX - (SURREAL) (Alternative Rock Mix.) [320 kbps].mp3"
+            audio: "../audios/AB6IX - (SURREAL) (Alternative Rock Mix.) [320 kbps].mp3"
         },
         {
             id: 8,
             title: "SALUTE - AB6IX (에이비식스)",
-            image: "/images/salute.jpg",
+            image: "../images/salute.jpg",
             description: "SALUTE oleh AB6IX (에이비식스)  adalah lagu dari boyband Korea Selatan, AB6IX (에이비식스), yang dirilis pada tanggal 29 Juni 2020. Lagu ini menampilkan kombinasi energi yang menggembirakan dan lirik yang menginspirasi, menciptakan suasana yang membangkitkan semangat untuk merayakan pencapaian dan menghadapi tantangan dengan keyakinan....",
             lyrics: [
                 "Ah ah ah ah, ah ah ah",
@@ -491,12 +491,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Come and get me, come and get it",
                 "Salute"
             ], 
-            audio: "/audios/AB6IX - SALUTE [320 kbps].mp3"
+            audio: "../audios/AB6IX - SALUTE [320 kbps].mp3"
         },//
         {
             id: 9,
             title: "Not Too Late - ATEEZ(에이티즈)",
-            image: "/images/zeropart3.jpg",
+            image: "../images/zeropart3.jpg",
             description: "Not Too Late oleh ATEEZ (에이티즈) adalah sebuah lagu dari boy band Korea Selatan, ATEEZ (에이티즈), yang memadukan elemen-elemen musik pop dan hip-hop dengan vokal yang kuat dan energik, mengeksplorasi tema-tema tentang keberanian dan ketabahan dalam menghadapi tantangan kehidupan. Lagu ini dirilis pada tanggal 28 Januari 2023.",
             lyrics: [
                 "어두워 이곳은",
@@ -557,13 +557,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 "It's not too late, oh",
                 "언젠가 마주할 빛을 찾아"
             ], 
-            audio: "/audios/ATEEZ - (Not Too Late) [320 kbps].mp3"
+            audio: "../audios/ATEEZ - (Not Too Late) [320 kbps].mp3"
         },
  
         {
             id: 10,
             title: " Eternal Sunshine - ATEEZ (에이티즈)",
-            image: "/images/zeropart3.jpg",
+            image: "../images/zeropart3.jpg",
             description: "Eternal Sunshine oleh ATEEZ (에이티즈) adalah sebuah lagu dari boy band Korea Selatan, ATEEZ (에이티즈), yang memadukan elemen-elemen musik pop dan hip-hop dengan vokal yang kuat dan energik, mengeksplorasi tema-tema tentang keberanian dan ketabahan dalam menghadapi tantangan kehidupan. Lagu ini dirilis pada tanggal 28 Januari 2023.",
             lyrics: [
                 "단 하나의 기억",
@@ -635,12 +635,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Oh yeah (hey)",
                 "We shine like eternal sunshine"
             ], 
-            audio: "/audios/ATEEZ - Eternal Sunshine [320 kbps].mp3"
+            audio: "../audios/ATEEZ - Eternal Sunshine [320 kbps].mp3"
         },
         {
             id: 11,
             title: "All For You - CIX (씨아이엑스)",
-            image: "/images/CIXAllForYou.jpg",
+            image: "../images/CIXAllForYou.jpg",
             description: "All For You oleh CIX (씨아이엑스) adalah lagu dari boyband Korea Selatan, CIX (씨아이엑스), yang menggabungkan elemen-elemen pop dan hip-hop dengan vokal yang kuat, menciptakan suasana yang enerjik dan menghibur. Lagu ini dirilis pada tanggal 23 Agustus 2021....",
             lyrics: [
                 "Hey you",
@@ -726,7 +726,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "耳澄ませば",
                 "I'll be right here all for you"
             ], 
-            audio: "/audios/CIX - All For You [129 kbps].mp3"
+            audio: "../audios/CIX - All For You [129 kbps].mp3"
         },
         // Add more songs here
     ];

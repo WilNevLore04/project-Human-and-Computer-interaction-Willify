@@ -1,0 +1,138 @@
+<?php
+
+session_start();
+$username = isset($_SESSION['user_name']) ? json_encode($_SESSION['user_name']) : 'null';
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">      
+    <title>Willify - Home</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/songDetail.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="songs.html">Songs</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+<!-- setiap li mempresentasikan satu pointer yang memiliki design dari file css yaitu main.css 
+     dan a herf akan mendireksikan user ke page yang di inginkan  -->            
+</header>
+    <main>
+        <h1>Welcome to Willify <span id="username"></span></h1>
+        <section>
+<!-- Section memberikan structur design yang lebih elegan -->
+            <h2>Recommended Songs</h2>
+            <div class="song-list">
+                <div class="song-card" data-song-id="1">
+                    <img src="../images/songs2.jpg" alt="I'm Missing You">
+                    <h3>I'm Missing You - Sunjae (선재)</h3>
+                    <p>Listeners: 1,000,234,567</p>
+                </div>
+                <div class="song-card" data-song-id="2">
+                    <img src="../images/songs1.jpg" alt="Fall in You">
+                    <h3>Fall in You - Ha Sung-woon</h3>
+                    <p>Listeners: 887,654,507</p>
+                </div>
+                <div class="song-card" data-song-id="9">
+                    <img src="../images/zeropart3.jpg" alt="Not Too Late">
+                    <h3>Not Too Late - ATEEZ</h3>
+                    <p>Listeners: 631,654,900</p>
+                </div>
+                <div class="song-card" data-song-id="4">
+                    <img src="../images/citylight.jpg" alt="UN Village">
+                    <h3>UN Village - Baekhyun (백현)</h3>
+                    <p>Listeners: 487,654,700</p>
+                </div>
+                <div class="song-card" data-song-id="5">
+                    <img src="../images/newhope.jpg" alt="HEAVEN">
+                    <h3>HEAVEN - AB6IX (에이비식스)</h3>
+                    <p>Listeners: 397,854,921</p>
+                </div>
+                <div class="song-card" data-song-id="7">
+                    <img src="../images/newhope.jpg" alt="SURREAL(Alternative Rock Mix)">
+                    <h3>SURREAL(Alternative Rock Mix) - AB6IX (에이비식스)</h3>
+                    <p>Listeners: 387,854,980</p>
+                </div>
+                <div class="song-card" data-song-id="3">
+                    <img src="../images/FAME.jpg" alt="Sacrifice">
+                    <h3>Sacrifice - Han Seung Woo (한승우)</h3>
+                    <p>Listeners: 310,654,900</p>
+                </div>
+                <div class="song-card" data-song-id="11">
+                    <img src="../images/CIXAllForYou.jpg" alt="All For You">
+                    <h3>All For You - CIX (씨아이엑스)</h3>
+                    <p>Listeners: 487,654,700</p>
+            <!-- Add more recommended songs as needed -->
+        </section>
+        <section>
+            <h2>TOP Songs</h2>
+            <div class="song-list">
+                <div class="song-card" data-song-id="1">
+                    <img src="../images/songs2.jpg" alt="I'm Missing You">
+                    <h3>I'm Missing You - Sunjae (선재)</h3>
+                    
+                </div>
+                <div class="song-card" data-song-id="2">
+                    <img src="../images/songs1.jpg" alt="Fall in You">
+                    <h3>Fall in You - Ha Sungwoon</h3>
+                   
+                </div>
+                <div class="song-card" data-song-id="6">
+                    <img src="../images/song3.jpg" alt="Wishes">
+                    <h3>Wishes - Jamie Miller</h3>
+
+                </div>
+                <div class="song-card" data-song-id="9">
+                    <img src="../images/zeropart3.jpg" alt="Not Too Late">
+                    <h3>Not Too Late - ATEEZ</h3>
+                  
+                </div>
+                <div class="song-card" data-song-id="5">
+                    <img src="../images/newhope.jpg" alt="HEAVEN">
+                    <h3>HEAVEN - AB6IX (에이비식스)</h3>
+                    
+                </div>
+                <div class="song-card" data-song-id="7">
+                    <img src="../images/newhope.jpg" alt="SURREAL(Alternative Rock Mix)">
+                    <h3>SURREAL(Alternative Rock Mix) - AB6IX (에이비식스)</h3>
+                   
+                </div>
+                <div class="song-card" data-song-id="3">
+                    <img src="../images/FAME.jpg" alt="Sacrifice">
+                    <h3>Sacrifice - Han Seung Woo (한승우)</h3>
+                </div>
+                <div class="song-card" data-song-id="8">
+                    <img src="../images/salute.jpg" alt="SALUTE">
+                    <h3>SALUTE - AB6IX (에이비식스)</h3>
+                    
+                </div>
+
+                <!-- Add more best seller songs as needed -->
+            </div>
+        </section>
+        <p>Willify is a renowned music streaming platform that made its debut in 2024...</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Willify. All rights reserved.</p>
+    </footer>
+    <script src="../scripts/songs.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const username = <?= $username ?>;
+            if (username) {
+                document.getElementById('username').innerHTML = username;
+            }
+        });
+    </script>
+</body>
+</html> 

@@ -1,48 +1,38 @@
 <?php
+@include 'db.php';
+
 session_start();
 
-// Koneksi ke database
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "willify_db";
-
-// Buat koneksi
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-
-// Cek koneksi
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if(isset($_SESSION['user_id'])) {
+    header("Location: ../html/index.html"); // Redirect ke halaman utama jika sudah login
+    exit();
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if(!$db) {
+    die("Connection failed: " . $db->connect_error);
+}
+if (isset($_POST['submit'])) {
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
 
-    // Query untuk mengecek user
-    $sql = "SELECT * FROM users WHERE email='$email'";
-    $result = $conn->query($sql);
-
+    $result = $db->query("SELECT * FROM users WHERE email='$email'");
     if ($result->num_rows > 0) {
-        // Ambil data user
-        $row = $result->fetch_assoc();
-
-        // Cek apakah password benar
-        if (password_verify($password, $row['password'])) {
-            // Set session
-            $_SESSION['user_id'] = $row['id'];
-            $_SESSION['user_name'] = $row['name'];
-            echo "Login sukses! Selamat datang, " . $row['name'];
-            // Redirect ke halaman utama atau dashboard
-            header("Location: /html/index.html");
+        $user = $result->fetch_assoc();
+        if ($password == $user['password']) {
+            // Login berhasil
+            $_SESSION['user_id'] = $user['id'];
+            $_SESSION['user_name'] = $user['name'];
+            header("Location: ../html/index.html"); // Redirect ke halaman utama setelah login
             exit();
         } else {
-            echo "Password salah!";
+            echo "<script>alert('Password salah!');</script>";
+            header('Location: ../html/login.html'); // Redirect kembali ke halaman login
         }
     } else {
-        echo "Email tidak terdaftar!";
+        echo "<script>alert('Email tidak ditemukan!');</script>";
+        header('Location: ../html/login.html'); // Redirect kembali ke halaman login
     }
+} else {
+    header("Location: ../html/login.html"); // Redirect ke halaman login jika akses langsung
 }
-
-$conn->close();
 ?>
