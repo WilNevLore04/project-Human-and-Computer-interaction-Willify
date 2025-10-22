@@ -1,0 +1,97 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    color: #333;
+    text-align: center;
+}
+
+.song-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.song-detail img {
+    align-self: flex-end;
+    margin-left: 2rem;
+    width: 300px; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto;
+    border-radius: 10px;
+}
+
+.song-description {
+    margin-bottom: 1.5rem;
+    text-indent: 20px;
+}
+
+.song-lyrics {
+    margin-bottom: 1.5rem;
+    white-space: pre-line;
+}
+
+audio {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .song-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .song-detail img {
+        align-self: center;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}

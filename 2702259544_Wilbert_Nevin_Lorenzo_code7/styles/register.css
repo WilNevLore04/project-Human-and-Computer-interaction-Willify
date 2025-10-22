@@ -1,0 +1,123 @@
+/* Menambahkan styling yang mirip dengan main.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9); /* Background semi-transparan */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Menyamakan dengan header di main.css */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Agar text pada form sesuai dengan styling di main.css */
+.register_title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Memperhalus form dan elemen-elemen lainnya */
+input[type="text"], input[type="email"], input[type="password"], select {
+    font-size: 1rem;
+    color: #333;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Sama dengan footer di main.css */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    button {
+        padding: 1rem;
+    }
+}
