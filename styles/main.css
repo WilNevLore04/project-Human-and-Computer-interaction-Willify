@@ -4,7 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     line-height: 1.6;
-    background-image: url('/images/background.jpg');
+    background-image: url('../images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

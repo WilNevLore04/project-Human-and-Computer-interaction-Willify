@@ -18,7 +18,7 @@ $username = isset($_SESSION['user_name']) ? json_encode($_SESSION['user_name']) 
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="songs.html">Songs</a></li>
                 <li><a href="register.html">Register</a></li>
                 <li><a href="about.html">About Us</a></li>

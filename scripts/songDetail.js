@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Oh, hmm",
                 "Oh, ayy"
             ], 
-            audio: "audios/Baekhyun EXO - UN Village.mp3"
+            audio: "../audios/Baekhyun EXO - UN Village.mp3"
         },
         {
             id: 5,

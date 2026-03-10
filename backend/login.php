@@ -4,7 +4,7 @@
 session_start();
 
 if(isset($_SESSION['user_id'])) {
-    header("Location: ../html/index.html"); // Redirect ke halaman utama jika sudah login
+    header("Location: ../html/index.php"); // Redirect ke halaman utama jika sudah login
     exit();
 }
 
